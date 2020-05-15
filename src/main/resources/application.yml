@@ -3,3 +3,8 @@ server:
 spring:
   application:
     name: user-service
+opentracing: 
+  jaeger:
+    udp-sender:
+      host: jaeger-agent.default.svc.cluster.local
+      port: 6831
